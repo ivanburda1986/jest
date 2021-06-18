@@ -39,8 +39,8 @@ test("initial conditions of the checkbox",()=>{
 
 test("ticked checkbox disables the button and unticked enables",()=>{
   render(<App/>);
-  const colorButton = screen.getByRole('button');
-  const checkbox = screen.getByRole('checkbox');
+  const checkbox = screen.getByRole('checkbox', {name: 'Disable button'});
+  const colorButton = screen.getByRole('button', {name: 'Change color to blue'});
 
   // check that the button becomes disabled
   fireEvent.click(checkbox);
