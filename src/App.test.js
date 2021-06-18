@@ -49,4 +49,25 @@ test("ticked checkbox disables the button and unticked enables",()=>{
   // check that the button becomes enabled
   fireEvent.click(checkbox);
   expect(colorButton).toBeEnabled(); 
-})
+});
+
+test("red button turns grey if deactivated",()=>{
+  render(<App/>);
+  const colorButton = screen.getByRole('button', {name: 'Change color to blue'});
+  const checkbox = screen.getByRole('checkbox', {name: 'Disable button'});
+  fireEvent.click(checkbox);
+  expect(colorButton).toHaveStyle({backgroundColor:'gray'});
+  fireEvent.click(checkbox);
+  expect(colorButton).toHaveStyle({backgroundColor:'red'});
+});
+
+test("blue button turns grey if deactivated",()=>{
+  render(<App/>);
+  const colorButton = screen.getByRole('button', {name: 'Change color to blue'});
+  const checkbox = screen.getByRole('checkbox', {name: 'Disable button'});
+  fireEvent.click(colorButton);
+  fireEvent.click(checkbox);
+  expect(colorButton).toHaveStyle({backgroundColor:'gray'});
+  fireEvent.click(checkbox);
+  expect(colorButton).toHaveStyle({backgroundColor: 'blue'});
+});
