@@ -27,4 +27,26 @@ test("button turns blue when clicked and gets the correct title", ()=>{
 
 });
 
+test("initial conditions of the checkbox",()=>{
+  render(<App/>);
+  // check that the button starts out enabled
+  const colorButton = screen.getByRole('button', {name: 'Change color to blue'});
+  expect(colorButton).toBeEnabled();
+  // check that the checkbox starts out unchecked
+  const checkBox = screen.getByRole('checkbox');
+  expect(checkBox).not.toBeChecked(); 
+});
 
+test("ticked checkbox disables the button and unticked enables",()=>{
+  render(<App/>);
+  const colorButton = screen.getByRole('button');
+  const checkbox = screen.getByRole('checkbox');
+
+  // check that the button becomes disabled
+  fireEvent.click(checkbox);
+  expect(colorButton).toBeDisabled();
+
+  // check that the button becomes enabled
+  fireEvent.click(checkbox);
+  expect(colorButton).toBeEnabled(); 
+})
