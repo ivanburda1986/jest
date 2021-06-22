@@ -12,5 +12,5 @@ export default function Options({ optionType }) {
       });
   }, [optionType]);
 
-  return <div>Options</div>;
+  return <div>Optionss</div>;
 }
