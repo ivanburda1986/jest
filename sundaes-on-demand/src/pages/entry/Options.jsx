@@ -4,7 +4,6 @@ import ScoopOption from "./ScoopOption";
 import ToppingOption from "./ToppingOption";
 import Row from "react-bootstrap/Row";
 import AlertBanner from "../common/AllertBanner";
-import Alert from "react-bootstrap/esm/Alert";
 
 export default function Options({ optionType }) {
   const [items, setItems] = useState([]);
