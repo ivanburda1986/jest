@@ -16,3 +16,7 @@ Which query to use?
 get - do we expect something to be available right away?
 query - not right away?
 find - asychronously?
+
+
+Install jest locally 
+npm i -D jest
