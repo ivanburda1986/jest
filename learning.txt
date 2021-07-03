@@ -1,22 +1,36 @@
-https://www.w3.org/TR/wai-aria-1.1/#role_definitions
+Learning resource 
+============================================================
+https://hackernoon.com/how-to-write-tests-for-react-beginners-guide-4299302l
+https://blog.sapegin.me/all/react-testing-1-best-practices/
 
+https://github.com/sapegin/jest-cheat-sheet?ref=hackernoon.com
+https://jestjs.io/?ref=hackernoon.com
+https://testing-library.com/docs/react-testing-library/intro/?ref=hackernoon.com
+https://testing-library.com/docs/ecosystem-jest-dom/?ref=hackernoon.com
+https://jestjs.io/docs/tutorial-react?ref=hackernoon.com
+https://testing-library.com/docs/react-testing-library/cheatsheet/?ref=hackernoon.com
+
+
+
+From Bonnie's course
+============================================================
+https://www.w3.org/TR/wai-aria-1.1/#role_definitions
 https://testing-library.com/docs/react-testing-library/cheatsheet/
 https://github.com/testing-library/jest-dom
-
 https://testing-library.com/docs/ecosystem-user-event/
 https://github.com/testing-library/user-event
-
-
-//Mock service worker 
-npm install msw 
-https://mswjs.io/docs/
-
 
 Which query to use?
 get - do we expect something to be available right away?
 query - not right away?
 find - asychronously?
 
+
+Installation
+============================================================
+//Mock service worker 
+npm install msw 
+https://mswjs.io/docs/
 
 Install jest locally 
 npm i -D jest
